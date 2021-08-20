@@ -14,9 +14,6 @@ jobs:
       
       - name: 디렉토리 출력
         run: ls -al
-      
-      - name: python execute
-        run: python tete.py
-      
+        
       - name: python execute2
         run: python name.py
