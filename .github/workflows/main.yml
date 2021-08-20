@@ -16,4 +16,4 @@ jobs:
         run: ls -al
       
       - name: 파이썬 실행..
-        run: python test.py
+        run: python name.py
