@@ -9,12 +9,15 @@ jobs:
       steps:
       #run 뒤에는 실제 작동하는 코드를 넣어야함
       - uses: actions/checkout@v2
-      
-      - name: hello world 출력
-        run: echo Hello, world!
-      
-      - name: 디렉토리 출력
-        run: ls -al
         
-      - name: python execute2
+      - name: 1. output name.py
         run: python name.py
+      
+      - name: 2. upgrade pip
+        run: python -m pip install --upgrade pip
+      
+      - name: 3. install needed package
+        run: pip install -r requirements.txt
+      
+      - name: 4. execute python
+        run: python test.py
