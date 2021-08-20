@@ -8,6 +8,7 @@ jobs:
       
       steps:
       #run 뒤에는 실제 작동하는 코드를 넣어야함
+      - uses: actions/checkout@v2
       
       - name: hello world 출력
         run: echo Hello, world!
